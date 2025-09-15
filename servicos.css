@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    color: #fff;
+}
+
+
+body{
+    background-color: #161616;
+    margin: 0   ;
+}
+.container{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 20vh 340vh 20vh;
+    grid-template-areas: "header header"
+                          "main aside"
+                          "footer footer";
+
+}
+header{
+    display: flex;
+    grid-area: header;
+    background-color: #161616;
+justify-content: center;
+}
+main{
+    grid-area: main;
+    background-color: #161616;
+}
+aside{
+    grid-area: aside;
+    background-color: #161616;
+}
+footer{
+    display: flex;
+    grid-area:footer;
+    background-color: #161616;
+    color: #fff;
+    opacity: 70%;
+    justify-content: center;
+}
+h1 {
+   text-align: center;
+   position: relative;
+   left: 155px;
+}
+h2 {
+    text-align: center;
+      position: relative;
+      bottom: 20px;
+   left: 155px;
+   color: gold;
+}
+.tunagemum{
+    width: 35%;
+    position: relative;
+    left: 370px;
+    border-radius: 15px;
+}
+.tunagemdois{
+    width: 35%;
+position: relative;
+ left: 370px;
+ border-radius: 15px;
+}
+.tunagemtres{
+    width: 35%;
+position: relative;
+ left: 370px;
+ border-radius: 15px;
+}
+.tunagemquatro{
+    width: 35%;
+position: relative;
+ left: 370px;
+ border-radius: 15px;
+}
+.linhabrancaum{
+    position: relative;
+    left: 500px;
+}
+
+.PINTUras{
+    text-align: center;
+    position: relative;
+    right: 10px;
+    top: 20px;
+    color: gold;
+}
+.pinturaum{
+    width: 35%;
+   position: relative;
+ left: 370px;
+ border-radius: 15px;
+}
+.pinturadois{
+    width: 35%;
+position: relative;
+ left: 370px;
+border-radius: 15px;
+}
+.pinturatres{
+    width: 35%;
+position: relative;
+ left: 370px;
+ border-radius: 15px;
+}
+.pinturaquatro{
+    width: 35%;
+ left: 370px;
+    position: relative;
+    border-radius: 15px;
+}
+.linhaa{
+   width: 100%;
+   height: 2px;
+    position: relative;
+    bottom: 180px ;
+    left: 110px;
+}
+form {
+    position: absolute;
+    right: 50%;
+    text-align: start;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 100px;
+}
+#menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 1002;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-btn span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.slide-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background:#000;
+    color: #fff;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 1001;
+}
+
+.slide-menu ul, li {
+    padding: 15px 20px;
+}
+
+.slide-menu ul, li:hover {
+    background: #000;
+    cursor: pointer;
+}
+
+.slide-menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+#menu-toggle:checked ~ .slide-menu {
+    left: 0;
+}
+
+#menu-toggle:checked ~ .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#menu-toggle:checked + .menu-btn span:nth-child(1) {
+    transform: rotate(45deg) translateY(13px);
+    background: #fff;
+}
+
+#menu-toggle:checked + .menu-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + .menu-btn span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-13px);
+    background: #fff;
+}
+.linhaas{
+    position: relative;
+    bottom: 280px;
+}
+.eventos_{
+position: relative;
+bottom: 260px;
+border-radius: 15px;
+color: gold;
+}
+
+
+
+.driftum{
+    position: relative;
+    top: 200px;
+    width: 35%;
+    left: 180px;
+}
+.driftdois{
+    width: 35%;
+position: relative;
+    left: 1150px;
+    bottom: 185px;
+}
+.simu_um{
+    width: 35%;
+    position: relative;
+    bottom: 120px;
+    left: 1150px;
+}
+.simu_dois{
+    width: 35%;
+    position: relative;
+     top: 190px;
+      right: 378px;
+}
+.simu{
+    position: relative;
+    bottom: 350px;
+    right: 19px;
+    color: goldenrod;
+}
+.driftt{
+    color: goldenrod;
+    position: relative;
+    right: 5px;
+}
+.fotum{
+    width: 35%;
+    position: relative;
+    left: 590px;
+    bottom: 90px;
+}
+.fotdois{
+    width: 35%;
+    position: relative;
+    left: 182px;
+    bottom: 95px;
+
+}
+.fotos{
+    color: goldenrod;
+    position: relative;
+    bottom: 350px;
+}
+.k{
+color: #fff;
+}
+.fim{
+    position: relative;
+    left: 100px;
+    width: 100%;
+    height: 2px;
+}
